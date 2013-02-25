@@ -2,6 +2,7 @@ package edu.ycp.cs320.pizza.client;
 
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.dom.client.Style.Unit;
+import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootLayoutPanel;
@@ -24,6 +25,13 @@ public class PizzaApp implements EntryPoint {
 		Pizza model = new Pizza();
 		pizzaview.setModel(model);
 		pizzaview.update();
+		
+		Button b = new Button("Press me!");
+		b.addClickHandler(new ClickHandler() {
+			public void onClick(ClickEvent event) {
+				RPC.orderService.hello(", callback)
+			}
+		})
 		
 		RootLayoutPanel.get().add(panel);
 		RootLayoutPanel.get().setWidgetTopBottom(panel, 10.0, Unit.PX, 10.0, Unit.PX);
