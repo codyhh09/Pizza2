@@ -27,11 +27,11 @@ public class PizzaApp implements EntryPoint {
 		pizzaview.update();
 		
 		Button b = new Button("Press me!");
-		b.addClickHandler(new ClickHandler() {
-			public void onClick(ClickEvent event) {
-				RPC.orderService.hello(", callback)
-			}
-		})
+//		b.addClickHandler(new ClickHandler() {
+//			public void onClick(ClickEvent event) {
+//				RPC.orderService.hello(", callback)
+//			}
+		//})
 		
 		RootLayoutPanel.get().add(panel);
 		RootLayoutPanel.get().setWidgetTopBottom(panel, 10.0, Unit.PX, 10.0, Unit.PX);

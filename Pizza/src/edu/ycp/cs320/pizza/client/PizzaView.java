@@ -45,7 +45,7 @@ public class PizzaView extends Composite {
 			
 			if(sizeComboBox.getItemCount() == 0){
 				Size[] sizes = Size.values();
-				for()
+				//for()
 			}
 
 	}
